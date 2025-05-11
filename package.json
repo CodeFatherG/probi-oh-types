@@ -1,0 +1,14 @@
+{
+  "name": "@probi-oh/types",
+  "author": "CodeFatherG",
+  "version": "1.0.0",
+  "license": "GNU GPL3",
+  "description": "Shared TypeScript types for client and server of the probi-oh project.",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint \"src/**/*.ts\" --format stylish",
+    "lint:fix": "eslint \"src/**/*.ts\" --format stylish --fix"
+  }
+}
