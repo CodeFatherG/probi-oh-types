@@ -17,7 +17,7 @@ export interface CardAnalytics {
     /**
      * Cards that were used with this card
      */
-    usedWith: CardAnalytics[];
+    usedWith: Record<string, number>;
 
     /**
      * Average success rate of simulations that used this card
