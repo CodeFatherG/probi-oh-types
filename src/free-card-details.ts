@@ -1,7 +1,7 @@
 /**
  * The type of cost that a free card must pay
  */
-export enum CostType {
+export enum FreeCardCost {
     BanishFromDeck,
     BanishFromHand,
     PayLife,
@@ -11,7 +11,7 @@ export enum CostType {
 /**
  * The type of a condition that the free card imposes
  */
-export enum ConditionType {
+export enum FreeCardCondition {
     Discard,
     BanishFromHand,
     BanishFromDeck,
@@ -20,7 +20,7 @@ export enum ConditionType {
 /**
  * The type of restriction that the free card imposes
  */
-export enum RestrictionType {
+export enum FreeCardRestriction {
     NoSpecialSummon,
     NoMoreDraws,
     NoPreviousDraws,
@@ -47,7 +47,7 @@ export default interface FreeCardDetails {
         /**
          * The type of cost that must be paid
          */
-        type: CostType;
+        type: FreeCardCost;
 
         /**
          * The value of the cost.
@@ -62,7 +62,7 @@ export default interface FreeCardDetails {
         /**
          * The type of condition that is imposed
          */
-        type: ConditionType;
+        type: FreeCardCondition;
 
         /**
          * The value of the condition.
@@ -73,7 +73,7 @@ export default interface FreeCardDetails {
     /**
      * The restrictions that this card imposes. If null then no restrictions are imposed
      */
-    restriction?: RestrictionType[];
+    restriction?: FreeCardRestriction[];
 
     /**
      * The number of cards that must be excavated to use this card. If null then no excavation is required
