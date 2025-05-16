@@ -15,6 +15,7 @@ export enum ConditionType {
 }
 
 export interface CardCondition {
+    kind: 'card';
     cardName: string;
     cardCount: number;
     operator: ConditionOperator;
@@ -22,7 +23,13 @@ export interface CardCondition {
 }
 
 export interface LogicCondition {
+    kind: 'logic';
     type: ConditionType;
-    conditionA: CardCondition;
-    conditionB: CardCondition;
+    conditionA: Condition;
+    conditionB: Condition;
+    render: {
+        hasParentheses: boolean;
+    }
 }
+
+export type Condition = CardCondition | LogicCondition;
