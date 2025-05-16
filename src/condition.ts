@@ -27,8 +27,8 @@ export interface LogicCondition {
     type: ConditionType;
     conditionA: Condition;
     conditionB: Condition;
-    render: {
-        hasParentheses: boolean;
+    render?: {
+        hasParentheses?: boolean;
     }
 }
 
