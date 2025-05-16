@@ -29,7 +29,7 @@ export enum FreeCardRestriction {
 /**
  * Represents the details of a free card in the game.
  */
-export default interface FreeCardDetails {
+export  interface FreeCardDetails {
     /**
      * The number of free draws this card gives
      */
