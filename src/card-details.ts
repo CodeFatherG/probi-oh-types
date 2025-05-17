@@ -1,4 +1,4 @@
-import FreeCardDetails from "./free-card-details";
+import { FreeCardDetails } from "./free-card-details";
 
 /**
  * Represents the details of a card in the game.
