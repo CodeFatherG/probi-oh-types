@@ -3,6 +3,6 @@ import { Condition } from "./condition";
 
 export interface SimulationInput {
     deckName?: string;
-    deck: Map<string, CardDetails>;
+    deck: Record<string, CardDetails>;
     conditions: Condition[];
 }
