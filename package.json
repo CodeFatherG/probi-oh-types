@@ -9,6 +9,7 @@
   "scripts": {
     "build": "tsc",
     "lint": "eslint \"src/**/*.ts\" --format stylish",
-    "lint:fix": "eslint \"src/**/*.ts\" --format stylish --fix"
+    "lint:fix": "eslint \"src/**/*.ts\" --format stylish --fix",
+    "test": ""
   }
 }
